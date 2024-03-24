@@ -1,0 +1,15 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+        "format": "expanded", //指編譯後的 CSS 格式
+        "extensionName": ".css", //指檔案編譯後產生的副檔名
+        "savePath": "~/../css" //scss自動編譯成css檔案的輸出路徑
+    }
+  ],
+
+  "liveSassCompile.settings.generateMap": false,
+
+  "liveSassCompile.settings.autoprefix": [
+
+  ]
+}
