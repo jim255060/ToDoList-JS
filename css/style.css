@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+body {
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  overflow-y: hidden;
+}
+
+.container {
+  background-color: #2C2C2C;
+  max-width: 1440px;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .main {
+  padding: 60px 60px;
+  min-height: 700px;
+}
+.container .main .title {
+  font-family: Racing Sans One;
+  font-size: 64px;
+}
+.container .main .title .title-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .title .title-text .short-line {
+  height: 1px;
+  width: 50px;
+  background-color: #FFFFFF;
+  margin: 0 12px;
+}
+.container .main .title .title-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .title .title-img .long-line {
+  height: 1px;
+  width: 220px;
+  background-color: #FFFFFF;
+  margin: 0 24px;
+}
+.container .main .title .title-img img {
+  display: block;
+}
+.container .main .inputNewList {
+  display: flex;
+  position: relative;
+  width: 820px;
+  height: 49px;
+  margin: 60px 60px 30px 60px;
+}
+.container .main .inputNewList .addNewListInput {
+  width: 100%;
+  padding: 0 120px 0 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 24px;
+}
+.container .main .inputNewList .addNewListBtn {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-family: Racing Sans One;
+  font-size: 24px;
+  background-color: #4F4F4F;
+  color: #FFFFFF;
+  cursor: pointer;
+}
