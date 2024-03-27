@@ -6,9 +6,7 @@
   <title>ToDoList</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-
 </head>
-
 <body>
   <div class="container">
     <div class="main">
@@ -25,15 +23,18 @@
         </div>
       </div>
       <div class="inputNewList">
-        <input type="text" class="addNewListInput">
-        <button class="addNewListBtn">Add task</button>
+        <input type="text" name="input" class="addNewListInput" id="addNewListInput">
+        <button class="addNewListBtn" id="addNewListBtn" onclick="addNewListBtn()">Add task</button>
       </div>
       <hr>
 
       <div class="tasks">
-
+        <ul class="lists" id="lists">
+        </ul>
       </div>
     </div>
   </div>
+
+  <script src="./main.js"></script>
 </body>
 </html>
