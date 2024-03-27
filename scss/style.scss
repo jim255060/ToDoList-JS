@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
-$font: Racing Sans One;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+$RacingSansOne: Racing Sans One;
+$Inter: Inter;
 
 body{
   background-color: #1E1E1E;
   color:#FFFFFF;
-  overflow-y: hidden;
 }
 
 .container{
@@ -17,9 +19,9 @@ body{
 
   .main{
     padding: 60px 60px;
-    min-height: 700px;
+    min-height: 660px;
     .title{
-      font-family: $font;
+      font-family: $RacingSansOne;
       font-size: 64px;
 
       .title-text{
@@ -61,8 +63,7 @@ body{
       .addNewListInput{
         width: 100%;
         padding: 0 120px 0 15px;
-        border: none;
-        border-radius: 25px;
+        border-radius: 18px;
         font-size: 24px;
       }
       .addNewListBtn{
@@ -70,14 +71,48 @@ body{
         right: 0;
         height: 100%;
         padding: 10px;
-        border: none;
-        border-radius: 20px;
-        font-family: $font;
+        border:none;
+        border-radius: 18px;
+        font-family: $RacingSansOne;
         font-size: 24px;
         background-color: #4F4F4F;
         color:#FFFFFF;
         cursor: pointer;
       }
     }
+
+    .tasks{
+      margin: 30px 60px;
+
+      .lists{
+        li{
+          display: flex;
+          align-items: center;
+          position: relative;
+          background-color: #222222;
+          margin: 30px 0;
+          padding: 0 15px;
+          border-radius: 12px;
+          height: 38px;
+          p{
+            font-size: 20px;
+            font-family: $Inter;
+            padding: 0 10px;
+          }
+
+          .doImg{
+            height: 50%;
+            cursor: pointer;
+          }
+          .deleteImg{
+            position: absolute;
+            right: -3px;
+            top: 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
   }
 }

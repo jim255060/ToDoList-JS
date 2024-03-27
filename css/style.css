@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 body {
   background-color: #1E1E1E;
   color: #FFFFFF;
-  overflow-y: hidden;
 }
 
 .container {
@@ -15,7 +15,7 @@ body {
 }
 .container .main {
   padding: 60px 60px;
-  min-height: 700px;
+  min-height: 660px;
 }
 .container .main .title {
   font-family: Racing Sans One;
@@ -56,8 +56,7 @@ body {
 .container .main .inputNewList .addNewListInput {
   width: 100%;
   padding: 0 120px 0 15px;
-  border: none;
-  border-radius: 25px;
+  border-radius: 18px;
   font-size: 24px;
 }
 .container .main .inputNewList .addNewListBtn {
@@ -66,10 +65,38 @@ body {
   height: 100%;
   padding: 10px;
   border: none;
-  border-radius: 20px;
+  border-radius: 18px;
   font-family: Racing Sans One;
   font-size: 24px;
   background-color: #4F4F4F;
   color: #FFFFFF;
+  cursor: pointer;
+}
+.container .main .tasks {
+  margin: 30px 60px;
+}
+.container .main .tasks .lists li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #222222;
+  margin: 30px 0;
+  padding: 0 15px;
+  border-radius: 12px;
+  height: 38px;
+}
+.container .main .tasks .lists li p {
+  font-size: 20px;
+  font-family: Inter;
+  padding: 0 10px;
+}
+.container .main .tasks .lists li .doImg {
+  height: 50%;
+  cursor: pointer;
+}
+.container .main .tasks .lists li .deleteImg {
+  position: absolute;
+  right: -3px;
+  top: 0;
   cursor: pointer;
 }
